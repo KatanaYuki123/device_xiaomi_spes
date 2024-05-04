@@ -246,9 +246,6 @@ ro.vendor.audio.soundtrigger.xatx.gmm.user.level=40
 ro.vendor.audio.soundtrigger.xatx.vop.level=10
 ro.vendor.audio.soundtrigger=sva
 
-# Thermal
-sys.thermal.data.path=/data/vendor/thermal/
-
 # USB
 vendor.usb.diag.func.name=diag
 ro.usb.uvc.enabled=true
