@@ -450,6 +450,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
+# Signed Build
+$(call inherit-product, vendor/extra/product.mk)
+
 # Telephony
 PRODUCT_PACKAGES += \
     CarrierConfigOverlay \
