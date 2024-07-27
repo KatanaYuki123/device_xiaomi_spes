@@ -11,11 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from spes/spesn device
 $(call inherit-product, device/xiaomi/spes/device.mk)
 
-# Inherit some common Voltage stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common Miku UI stuff.
+$(call inherit-product, vendor/miku/build/product/miku_product.mk)
 
 # Product Specifics
-PRODUCT_NAME := voltage_spes
+PRODUCT_NAME := miku_spes
 PRODUCT_DEVICE := spes
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 11
@@ -31,3 +31,6 @@ BUILD_FINGERPRINT := "Redmi/spes/spes:13/TKQ1.221114.001/V14.0.5.0.TGCINXM:user/
 
 # Boot animaton
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Maintaier
+MIKU_MASTER := komii000
