@@ -21,5 +21,5 @@ cp device/qcom/sepolicy_vndr/legacy-um/qva/vendor/bengal/legacy-ims/hal_rcsservi
 git clone https://github.com/tanvirr007/vendor_xiaomi_spes -b 14.0 vendor/xiaomi/spes
 git clone https://github.com/KatanaYuki123/android_kernel_xiaomi_sm6225.git kernel/xiaomi/sm6225
 
-# Lineage-21 Hardware Source
-git clone https://github.com/LineageOS/android_hardware_xiaomi.git -b lineage-21 hardware/xiaomi
+# ApolloOS Hardware Source
+git clone https://github.com/KatanaYuki123/hardware_xiaomi.git -b 13 hardware/xiaomi
