@@ -9,8 +9,8 @@ sleep 1
 # Remove pixel headers to avoid conflicts
 rm -rf hardware/google/pixel/kernel_headers/Android.bp
 
-# Remove hardware/lineage/compat to avoid conflicts
-rm -rf hardware/lineage/compat/Android.bp
+# Remove hardware/miku/compat to avoid conflicts
+rm -rf hardware/miku/compat/Android.bp
 
 # Sepolicy fix for imsrcsd
 echo -e "${color}Switch back to legacy imsrcsd sepolicy${end}"
@@ -23,3 +23,7 @@ git clone https://github.com/KatanaYuki123/android_kernel_xiaomi_sm6225.git kern
 
 # ApolloOS Hardware Source
 git clone https://github.com/KatanaYuki123/hardware_xiaomi.git -b 13 hardware/xiaomi
+
+# Hardware
+git clone https://github.com/lineageos/android_packages_resources_devicesettings packages/resources/devicesettings
+rm -rf hardware/xiaomi/hidl/powershare
